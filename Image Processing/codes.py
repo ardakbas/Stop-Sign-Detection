@@ -55,7 +55,7 @@ def find_stop(path):
                 rectangled = cv.rectangle(image,(x,y),(x+dx,y+dy),(255,255,255),2)
 
                 print(f"Center coordinates are that x:{(x+dx)/2} y:{(y+dy)/2}")
-
+    #Saving processed image
     path_ = Path(path)
     cv.imwrite(f"ProcessedImages/{path_.stem}_processed{path_.suffix}",rectangled)
 
@@ -64,4 +64,5 @@ def find_stop(path):
     cv.waitKey(0)
 
 find_stop("Original Images/photo5.jpg")
+
 
