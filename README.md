@@ -10,6 +10,9 @@
   
   Pathlib is a built-in library that is used to make path operations easy. Via path function, path's various features are easily used.
 
+# Usage
+  To use the code, call the find_stop(path) function. The path parameter specifies the image's path. When the function runs, it detects STOP signs in the image, draws a bounding box around them, and saves the processed image to the processed_images folder. This way, you can both perform detection and save the result with a single function call.
+
 # Limitations
   Owing to the fact that the method relies on color analysis, there can be irrelevant outputs. In other words, objects like vehicle lights can deceive the code. Also, low brightness and different conditions can make inefficient measurement.
 
